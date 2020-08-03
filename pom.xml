@@ -38,6 +38,12 @@
                             <mainClass>com.azure.cosmos.sample.async.AsyncMain</mainClass>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>leak</id>
+                        <configuration>
+                            <mainClass>com.azure.cosmos.sample.async.AsyncMainLeak</mainClass>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -58,13 +64,24 @@
         <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-cosmos</artifactId>
-            <version>4.0.1</version>
+            <version>4.3.0</version>
         </dependency>
         <dependency>
-          <groupId>org.apache.commons</groupId>
-          <artifactId>commons-lang3</artifactId>
-          <version>3.10</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.10</version>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
     </dependencies>
 
 </project>
