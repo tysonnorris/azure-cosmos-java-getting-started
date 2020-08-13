@@ -75,7 +75,7 @@ public class AsyncMainLeak {
                 .key(AccountSettings.MASTER_KEY)
                 //  Setting the preferred location to Cosmos DB Account region
                 //  West US is just an example. User should set preferred location to the Cosmos DB region closest to the application
-                .preferredRegions(Collections.singletonList("West US"))
+//                .preferredRegions(Collections.singletonList("West US"))
 //            .consistencyLevel(ConsistencyLevel.EVENTUAL)
                 .consistencyLevel(ConsistencyLevel.SESSION)
                 //  Setting content response on write enabled, which enables the SDK to return response on write operations.
