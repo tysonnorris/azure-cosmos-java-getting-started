@@ -9,4 +9,4 @@ RUN mvn dependency:resolve-plugins dependency:resolve dependency:go-offline clea
 #script to constantly run test
 COPY runtest.sh ./runtest.sh
 
-CMD mvn exec:java@leak
+CMD sh ./runtest.sh
